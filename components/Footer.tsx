@@ -1,3 +1,4 @@
+import { Mail, MapPinned, PhoneCall } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -27,12 +28,7 @@ export default function Footer() {
         <div className="flex flex-col text-sm gap-2">
           <h2 className="text-md font-bold mb-2">Kontak Kami</h2>
           <div className="flex items-start gap-2">
-            <Image
-              src="/images/location.png"
-              alt="Icon Address"
-              width={20}
-              height={20}
-            />
+            <MapPinned size={18} />
             <p className="max-w-sm">
               Dusun Krajan RT/RW 005/003 <br /> Ds. Bhinor, Kec. Paiton, <br />
               Kab. Probolinggo, Prov. Jawa Timur.
@@ -40,22 +36,12 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center gap-2">
-            <Image
-              src="/images/mail.png"
-              alt="Icon Email"
-              width={20}
-              height={20}
-            />
+            <Mail size={18} />
             <span>ptastamaardhinatha@gmail.com</span>
           </div>
 
           <div className="flex items-center gap-2">
-            <Image
-              src="/images/phone-call.png"
-              alt="Icon Phone"
-              width={20}
-              height={20}
-            />
+            <PhoneCall size={18} />
             <span>0812-4984-9994</span>
           </div>
         </div>
