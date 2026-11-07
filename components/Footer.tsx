@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between bg-[#0A223C] text-white p-8">
+    <footer className="flex flex-col lg:flex-row justify-between bg-[#0A223C] text-white p-8">
       <div className="flex items-center flex-2 gap-2">
         <Image
           src="/images/logo-astama-no-bg.png"
@@ -14,7 +14,7 @@ export default function Footer() {
         <p className="text-lg font-semibold">PT. ASTAMA ARDHI NATHA</p>
       </div>
 
-      <div className="flex gap-3 flex-2 justify-between">
+      <div className="flex flex-col sm:flex-row gap-3 flex-2 justify-between">
         <div className="flex flex-col text-sm gap-2">
           <h2 className="text-md font-bold mb-2">Menu</h2>
           <Link href="/home">Beranda</Link>
